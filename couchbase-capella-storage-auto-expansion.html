@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Couchbase Capella - Yee Ting McCloy | Technical Product Designer, Developer & Illustrator</title>
+    <meta charset="utf-8">
+    <meta description="UK based product designer and illustrator with print design and web/app UI design and developer skills">
+    <meta keywords="UK, freelance, illustrator, illustration, product, design, graphic, graphics, web, UI, UX,html, css, jquery, app, wireframing, prototyping, javascript, Sketch, InVision, Figma, Miro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <header>
+        <div class="header-container">
+            <div class="mobile-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="header-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <h1>Couchbase</h1>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main case-study">
+        <div class="banner cb-banner">
+            <img src="images/projects/capella-hero-banner-image_free_tier.png" alt="Couchbase Capella banner" title="Couchbase Capella storage auto expansion banner" width="800" height="492"/>
+        </div>
+        <div class="content">
+            <section id="storage-auto-expansion">
+                <h2>Configuring Storage Auto-Expansion to reduce risk of outages</h2>
+                <div class="project-wrapper">
+                    <div class="project-main">
+                        <div class="challenge">
+                            <h3>The Challenge</h3>
+                            <p>End users were experiencing outages due to sudden spikes in traffic and therefore running out of storage before they had a chance to react.</p>
+                            <div class="pain-points">
+                                <h4>Pain Points &#128162;</h4>
+                                <ul>
+                                    <li>No capability of auto-expanding storage on clusters</li>
+                                    <li>No visibility of storage limits being exceeded</li>
+                                </ul>
+                            </div>
+                            <h3>The Solution</h3>
+                            <p>Updated the UI to provide the user with the ability to enable storage auto-expansion at a Service Group level so that it would allow them time to address the cause in a sudden spike in traffic and prevent an outage of their application.
+                                <br><br>
+                                This feature would also improve the user's experience as they would be notified when an expansion event occurred and, subsequently, it would mean that they could avoid having to raise a support ticket.
+                                <br><br>
+                                <b>So, how would the feature work?</b>
+                                <br><br>
+                                If the logged in user has the appropriate permissions to edit their Service Groups on a cluster, then they would be able to switch Auto-Expansion on or off. For existing clusters this feature would have to be manually switched on. All new clusters created after the feature was added would have Auto-Expansion switched on by default.<br><br>
+                                If the user utilises AWS as their provider then they would only be able to expand their storage once in any 6-hour period as this is a restriction that AWS impose.
+                            </p>
+                            <p>
+                                <b>What design changes were needed?</b>
+                            </p>
+                            <p><i>Toggle Switch:</i></p>
+                            <ul>
+                                <li>Added a new column to the Data Grid for Service Groups</li>
+                                <li>Added text to the switch to explicitly inform the user whether it was enabled or not, rather than solely relying on colour alone as the differentiator</li>
+                                <li>Documented proposed design changes to the toggle switch component so that accessibility could be improved</li>
+                            </ul>
+                            <p><i>Information Banner:</i></p>
+                            <ul>
+                                <li>Added an Information Banner on the Service Groups page to explain the purpose of the Storage Auto-Expansion feature</li>
+                                <li>Banner was designed to persist on the page as the type of change that would be initiated had a cost implication for the end user</li>
+                            </ul>
+                        </div>
+                        <div class="outcome">
+                            <h3>The Outcome</h3>
+                            <p>Users were able to self-service and manage their storage leading to at least a 25% reduction in related support enquiries.</p>
+                            <p>Key features of the solution:</p>
+                            <ul>
+                                <li>Additional functionality in UI to enable or disable Storage Auto-Expansion</li>
+                                <li>Push and email notifications to the end user when an expansion event occurred</li>
+                                <li>Event added to logs for improved observability and monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="artifacts">
+                            <p class="role"><span>Role</span><br>Lead UX Designer</p>
+                            <h3>Work Completed</h3>
+                            <ul>
+                                <li>UX review of existing Service Group level functionality</li>
+                                <li>UX review of data grid component</li>
+                                <li>Proposed design changes to toggle switch component for improved accessibility</li>
+                                <li>User Flow Diagrams</li>
+                                <li>Low Fidelity Wireframes</li>
+                                <li>High Fidelity Prototypes</li>
+                                <li>Presentation of designs to multiple stakeholders including product manager, engineering manager, engineers and QA engineers</li>
+                            </ul>
+                        </div>
+                        <ul class="project-tools">
+                            <li>
+                                <img src="images/svg/Figma-logo.svg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="project-link">
+                <h4>Next Up</h4>
+                <ul>
+                    <li><a href="couchbase-capella-xdcr.html">XDCR to Self-Managed from capella</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contact"><script src="js/email-contact.js"></script></div>
+        <p>&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Yee Ting McCloy</p>
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+        </body>
+</html> 

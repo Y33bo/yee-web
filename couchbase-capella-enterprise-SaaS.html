@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Couchbase Capella - Yee Ting McCloy | Technical Product Designer, Developer & Illustrator</title>
+    <meta charset="utf-8">
+    <meta description="UK based product designer and illustrator with print design and web/app UI design and developer skills">
+    <meta keywords="UK, freelance, illustrator, illustration, product, design, graphic, graphics, web, UI, UX,html, css, jquery, app, wireframing, prototyping, javascript, Sketch, InVision, Figma, Miro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <header>
+        <div class="header-container">
+            <div class="mobile-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="header-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <h1>Couchbase</h1>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main case-study">
+        <div class="banner cb-banner">
+            <img src="images/projects/capella-hero-banner-image_free_tier.png" alt="Couchbase Capella banner" title="Couchbase Capella storage auto expansion banner" width="800" height="492"/>
+        </div>
+        <div class="content">
+            <h2>Crafting delightful developer experiences for an Enterprise NoSQL SaaS platform</h2>
+            <section class="cc-intro">
+                <h3>What is Couchbase Capella?</h3>
+                <p>Capella is Couchbase's cloud SaaS offering. It's the easiest and fastest way to begin with Couchbase and to eliminate ongoing database management efforts. You can <a href="https://www.couchbase.com/products/capella/" target="_blank">find out more here <i class="fa fa-external-link"></i></a> or <a href="https://cloud.couchbase.com/sign-up" target="_blank">try it out here <i class="fa fa-external-link"></i></a>. Customers include Paypal, PepsiCo, Sky, Tesco, UPS, Amadeus, Cisco and GE.</p>
+                <h3>Features &amp; Work Streams</h3>
+                <p>During my 2-year tenure at Couchbase I was heavily focussed on improving the devEx of the product. I was involved in gathering both internal and external feedback and performed regular design audits of the product, raising bugs where necessary to improve the overall consistency and quality of the UI. I worked on a multitude of features and work streams across multiple cross-functional teams simultaneously whilst being a strong advocate for design in the wider organisation.</p>
+                <ul class="cc-features">
+                    <li><a href="couchbase-capella-storage-auto-expansion.html">Storage Auto-Expansion</a></li>
+                    <li><a href="couchbase-capella-xdcr.html">XDCR to Self-Managed from Capella</a></li>
+                    <li><a href="couchbase-capella-social-sign-on.html">Social Sign-On</a></li>
+                    <li><a href="couchbase-capella-billing.html">Billing Observability Dashboard</a></li>
+                    <li><a href="couchbase-capella-free-trial.html">Free Trial UX Gap Analysis &amp; Review</a></li>
+                    <li><a href="couchbase-capella-design-system.html">design system updates</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div id="contact"><script src="js/email-contact.js"></script></div>
+        <p>&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Yee Ting McCloy</p>
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+        </body>
+</html> 

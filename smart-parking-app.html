@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Parking App - Yee Ting McCloy | Technical Product Designer, Developer & Illustrator</title>
+    <meta charset="utf-8">
+    <meta description="UK based product designer and illustrator with print design and web/app UI design and developer skills">
+    <meta keywords="UK, freelance, illustrator, illustration, product, design, graphic, graphics, web, UI, UX,html, css, jquery, app, wireframing, prototyping, javascript, Sketch, InVision, Figma, Miro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <header>
+        <div class="header-container">
+            <div class="mobile-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="header-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <h1>SmartPark</h1>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main case-study">
+        <div class="banner spa-banner">
+            <img src="images/projects/smart-parking-app-banner.png" alt="smart parking app banner" title="smart parking app banner" width="800" height="492"/>
+        </div>
+        <div class="content">
+            <h2>Creating an observability platform for a multi-site parking facility</h2>
+            <div class="project-wrapper">
+                <div class="project-main">
+                    <div class="challenge">
+                        <h3>The Challenge</h3>
+                        <p>Higher education institutions that have to manage a portfolio of multi-use parking facilities tend to struggle with analysing how different locations are used. Some car parks can be for students only, some for staff only, some for visitors only, and some can be a mixture of these three types of driver.
+                            <br><br>
+                            In this case, the customer was a university that had a plethora of mixed used car parks. They were seeing a lot of complaints about the parking situation - ranging from there not being enough permits available for allocation, drivers not being able to find a parking space without having to drive to each car park, and campus security staff finding it difficult to identify suspicious vehicles or activity.
+                        </p>
+                        <div class="pain-points">
+                            <h4>Pain Points &#128162;</h4>
+                            <ul>
+                                <li>No existing platform to consume data and gain insights</li>
+                                <li>Manual issuing of car park permits</li>
+                                <li>No way of spotting unusual or suspect vehicles/activity.</li>
+                            </ul>
+                        </div>
+                        <h3>The Solution</h3>
+                        <p>Using PowerBI to ingest and display data such as ANPR information, occupancy rates, and space utilisation during the week for all the car parks, I created an analytics dashboard where the customer could easily access an overview of how their car parks were being utilised. This would enable the customer to be able to manage the amount of student and staff permits, and assist with directing visitors to available spaces.
+                            <br><br>
+                            An alert notification system that leveraged the number plate recognition system to log unusual activity, such as cars entering campus car parks late in the night, was included to assist campus security. Alerts could be viewed at any time and staff could either choose to keep it on record or take appropriate action.
+                            <br><br>
+                            The ANPR data would also be used in issuing digital permits i.e. a car with a valid permit would be able to pass through the barrier at any one of their ANPR camera sites rather than having to be manually checked.
+                        </p>
+                    </div>
+                    <div class="outcome">
+                        <h3>The Outcome</h3>
+                        <p>Capacity and permits were expected to be at least 25% better managed as a result of this solution and complaints were expected to reduce by 50%.</p>
+                        <p>Key features of the solution:</p>
+                        <ul>
+                            <li>Leverage Power BI to parse and display data</li>
+                            <li>Overview of utilisation of each site, including busiest locations for better management of permits</li>
+                            <li>Improved monitoring of all visitors and ability to identify suspect vehicles in a timely manner</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-sidebar">
+                    <div class="artifacts">
+                        <p class="role"><span>Role</span><br>Lead Product Designer</p>
+                        <h3>Work Completed</h3>
+                        <ul>
+                            <li>High Fidelity Prototypes</li>
+                        </ul>
+                    </div>
+                    <ul class="project-tools">
+                        <li>
+                            <img src="images/svg/Sketch_Logo.svg" />
+                        </li>
+                        <li>
+                            <img class="wide-logo" src="images/svg/InVision-logo-pink.svg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+            <div class="project-link">
+                <h4>Next Up</h4>
+                <ul>
+                    <li><a href="door-access-management-system.html">access solutions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contact"><script src="js/email-contact.js"></script></div>
+        <p>&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Yee Ting McCloy</p>
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+</body>
+</html> 

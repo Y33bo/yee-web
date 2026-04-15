@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zestify App - Yee Ting McCloy | Technical Product Designer, Developer & Illustrator</title>
+    <meta charset="utf-8">
+    <meta description="UK based product designer and illustrator with print design and web/app UI design and developer skills">
+    <meta keywords="UK, freelance, illustrator, illustration, product, design, graphic, graphics, web, UI, UX,html, css, jquery, app, wireframing, prototyping, javascript, Sketch, InVision, Figma, Miro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <header>
+        <div class="header-container">
+            <div class="header-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <h1>Zestify*</h1>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main case-study">
+        <div class="banner z-banner">
+            <h2 id="banner-title"></h2>
+        </div>
+        <div class="content">
+            <h2>Encouraging healthier dietary habits with a judgement-free tool</h2>
+            <section class="zestify-intro">
+                <h3>What is Zestify?</h3>
+                <p>I listen to podcasts a lot when I'm either working or out on a walk and one of my favourites is Just One Thing hosted by the late and truly irreplaceable Dr. Michael Moseley. It introduced a whole new way of thinking about how to approach health and general well being and introduced lots of easy to do, simple lifestyle changes that can be adopted to incrementally improve our health over time. For instance: taking a vitamin D supplement daily, adding milled flax seed to your diet and so on.</p>
+                <p>It inspired me to create Zestify, an app to help people improve their health by fostering better dietary and lifestyle habits. It is designed to be free-to-use, as cost can be a excluding factor, and something casual and fun as opposed to overly judgemental.</p>
+                <h3>So, how will it work?</h3>
+                <p>It will be a web app, as building additional native Android and iOS will triple the workload and running costs and I'm working on this solo.</p>
+            <div class="project-link">
+                <h4>Next Up</h4>
+                <ul>
+                    <li><a href="accident-emergency-waiting-room-mobile-app.html">NHS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contact"><script src="js/email-contact.js"></script></div>
+        <p>&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Yee Ting McCloy</p>
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+        <script>
+            window.onload = function() {typeWriter()};
+            var i = 0;
+            var txt1 = 'Under construction...'; /* The text */
+            var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+            function typeWriter() {
+            if (i < txt1.length) {
+                document.getElementById("banner-title").innerHTML += txt1.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        </script>
+</html> 

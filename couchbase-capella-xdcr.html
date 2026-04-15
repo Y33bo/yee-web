@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Couchbase Capella - Yee Ting McCloy | Technical Product Designer, Developer & Illustrator</title>
+    <meta charset="utf-8">
+    <meta description="UK based product designer and illustrator with print design and web/app UI design and developer skills">
+    <meta keywords="UK, freelance, illustrator, illustration, product, design, graphic, graphics, web, UI, UX,html, css, jquery, app, wireframing, prototyping, javascript, Sketch, InVision, Figma, Miro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+    
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+    <header>
+        <div class="header-container">
+            <div class="mobile-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="header-links">
+                <a href="index.html" title="Yee Ting McCloy - Product Designer, Front End Developer, Illustrator">Home</a>
+                <h1>Couchbase</h1>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </header>
+    <div class="main case-study">
+        <div class="banner cb-banner">
+            <img src="images/projects/capella-hero-banner-image_free_tier.png" alt="Couchbase Capella banner" title="Couchbase Capella storage auto expansion banner" width="800" height="492"/>
+        </div>
+        <div class="content">            
+            <section id="xdcr">
+                <h2>Managing Cross Data Center Replications to Self-Managed clusters from Capella</h2>
+                <div class="project-wrapper">
+                    <div class="project-main">
+                        <div class="challenge">
+                            <h3>The Challenge</h3>
+                            <p>Users did not have the ability to set up cross data center replications to self managed targets external to Capella.</p>
+                            <div class="pain-points">
+                                <h4>Pain Points &#128162;</h4>
+                                <ul>
+                                    <li>Unable to set up replications to self managed target clusters/databases</li>
+                                </ul>
+                            </div>
+                            <h3>The Solution</h3>
+                            <p>Providing the user with the ability to set up replications from their Capella clusters to self managed targets such as an AWS bucket.
+                                <br><br>
+                                This feature would also allow the user to have visibility of within the UI as to whether there were any issues or errors with their replications.
+                                <br><br>
+                                <b>So, how would the feature work?</b>
+                                <br><br>
+                                Users would be able to set up replications to self managed targets, as long as they were using the same cloud provider for both the target and replication source, from the Capella UI - functionality which already existed in Couchbase Server.
+                            </p>
+                            <p>
+                                <b>What design changes were needed?</b>
+                            </p>
+                            <ul>
+                                <li>Translating the existing content of the Server UI for XDCR into the UI components of Capella</li>
+                                <li>Modified existing data grid cell types to accommodate content that included alert icons and coloured labels/pill badges</li>
+                                <li>Documented proposed design changes to the data grid component to improve accessibility and extend usability</li>
+                            </ul>
+                        </div>
+                        <div class="outcome">
+                            <h3>The Outcome</h3>
+                            <p>Improved parity between the Couchbase Server and Capella products, encouraging more Server users to try out Capella for future use cases.</p>
+                            <p>Key features of the solution:</p>
+                            <ul>
+                                <li>Extended functionality in the UI to be able to select self managed targets for replications</li>
+                                <li>Tailored replication table to include additional columns for target specific data</li>
+                                <li>Improved at-a-glance visibility of any issues or errors with replications through the use of colour-coded pill badges</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="artifacts">
+                            <p class="role"><span>Role</span><br>Lead UX Designer</p>
+                            <h3>Work Completed</h3>
+                            <ul>
+                                <li>UX review of existing XDCR functionality in the Couchbase Server UI</li>
+                                <li>UX review of data grid and radio button component</li>
+                                <li>Proposed design changes to data component to accommodate new content type such as alert icons and labels</li>
+                                <li>User Flow Diagrams</li>
+                                <li>Low Fidelity Wireframes</li>
+                                <li>High Fidelity Prototypes</li>
+                                <li>Presentation of designs to multiple stakeholders including product manager, engineering manager, and engineers from the server and Capella teams</li>
+                            </ul>
+                        </div>
+                        <ul class="project-tools">
+                            <li>
+                                <img src="images/svg/Figma-logo.svg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+            </section>
+            <div class="project-link">
+                <h4>Next Up</h4>
+                <ul>
+                    <li><a href="couchbase-capella-social-sign-on.html">Social sign-on</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contact"><script src="js/email-contact.js"></script></div>
+        <p>&copy; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Yee Ting McCloy</p>
+    </footer>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+        </body>
+</html> 
