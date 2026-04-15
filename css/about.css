@@ -1,0 +1,218 @@
+h2 {
+    font-weight: 100;
+    text-align: center;
+}
+
+.about {
+    padding: 0;
+    text-align: left;
+}
+
+.about-row {
+    display: flex;
+}
+
+.about-block {
+    width: 50%;
+    padding: 2em;
+}
+
+.about-block h3 {
+    margin-top: 0;
+}
+
+.about-block span {
+    font-size: 3em;
+}
+
+.about-full {
+    width: calc(100% - 4em);
+}
+
+.one {
+    background-color:#fbd900;
+    background-image: linear-gradient(110deg, #01AFB5 0%, rgb(168, 230, 54) 75%);
+}
+
+.two {
+    background-color: #190857;
+    color: #fff;
+}
+
+.three {
+    background-color: #01AFB5;
+    background-image: linear-gradient(110deg, rgb(168, 230, 54) 0%, rgb(211, 135, 226) 85%);
+}
+
+.four {
+    background-image: linear-gradient(110deg, rgba(1, 175, 181, 0.2) 0%, rgba(168, 230, 54, 0.2) 25%, rgba(211, 135, 226, 0.2) 85%);
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.one h3, .three h3, .two h3 {
+    font-weight: 700 !important;
+    color: #fff;
+    text-shadow: 0px 10px 30px rgba(0,6,26,0.5);
+    letter-spacing: 1px;
+}
+
+.four ul {
+    display: inline-flex;
+}
+
+.four li {
+    text-align: center;
+    margin: 1em;
+}
+
+.four h3 {
+    text-align: center !important;
+    font-weight: 100 !important;
+    letter-spacing: 1px;
+}
+
+.four h4 {
+    font-family: 'Permanent Marker';
+}
+
+.four p {
+    margin: 1em 0 2em;
+}
+
+.skills li {
+    display: inline-block;
+    background: #fff;
+    list-style:none !important;
+    border: 0 !important;
+    width: 300px;
+    height: 180px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 0 1em 1em 0;
+    box-shadow: 0px 10px 30px rgba(0,6,26,0.1);
+    overflow: hidden;
+}
+
+.skills h4 {
+    background-color:#01AFB5;
+    background-image: linear-gradient(110deg, #01AFB5 0%, rgb(168, 230, 54) 75%);
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 1em;
+    text-shadow: 0px 10px 30px rgba(0,6,26,0.9);
+}
+
+.skills li:nth-child(even) h4 {
+    background-color: rgb(168, 230, 54);
+    background-image: linear-gradient(110deg, rgb(168, 230, 54) 0%, rgb(211, 135, 226) 85%);
+}
+
+.skills p {
+    padding: 0 1em;
+}
+
+.tools {
+    padding: 3em 0 2em;
+}
+
+.tools ul {
+    padding: 3em 3em 2em;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0,6,26,0.1);
+}
+
+.tools li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 2em 2em 0;
+}
+.tools img {
+    width: auto;
+    height: 50px;
+    max-width: 180px;
+}
+
+.experience {
+    padding: 2em 0;
+}
+
+.experience li {
+    list-style: none;
+    display: flex;
+}
+
+.experience li {
+    border-top: 1px solid #ccc;
+}
+
+.about-block h3, .skills h3, .tools h3, .experience h3, .experience h4, .experience h5 {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.experience h4 {
+    font-weight: 700;
+    color: #01AFB5;
+    margin-right: .5em;
+}
+
+.skills h3, .tools h3, .experience h3, .experience h5 {
+    font-weight: 400;
+}
+
+.experience h6 {
+    color: #555;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin:1em 0 1em .5em;
+    line-height:1;
+}
+
+@media only screen and (max-width: 480px) {
+    .content {
+        padding: 1em;
+    }
+    .content h2 {
+        margin: .5em 0;
+    }
+    .about-row {
+        display: block;
+    }
+    .about-block {
+        width: calc(100% - 3em);
+        padding: 1.5em;
+    }
+    .skills li {
+        width: 100%;
+        height: auto;
+    }
+    .tools {
+        padding: 0;
+    }
+    .tools ul {
+        padding: 1.5em;
+    }
+    .experience {
+        padding: 0 0 2em;
+    }
+    .experience li {
+        display: block;
+    }
+    .experience h4, .experience h5 {
+        margin: 0.5em 0;
+    }
+    .four ul {
+        display: block;
+    }
+    .four li {
+        display: inline-block;
+        margin: 0;
+    }
+    .experience h6 {
+        margin-left: 0;
+    }
+}

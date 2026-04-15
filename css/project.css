@@ -1,0 +1,128 @@
+.project-wrapper {
+    display: flex;
+}
+
+.project-main {
+    width: calc(80% - 1em);
+    margin-bottom: 3em;
+}
+
+.challenge, .outcome {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0,6,26,0.1);
+}
+
+.challenge {
+    margin-bottom: 1em;
+}
+
+.challenge h3, .artifacts h3, .role span, i {
+    color: #01AFB5;
+}
+
+.pain-points {
+    /* background: rgba(252, 204, 204, 0.5); */
+    background-image: linear-gradient(110deg, rgba(252, 12, 104, 0.1) 0%, rgba(255, 98, 145, 0.1) 75%);
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.pain-points h4 {
+    margin-top: 0;
+}
+
+.pain-points li {
+    padding: 0 0 1em;
+}
+
+.project-sidebar {
+    width: 20%;
+    margin-left: 1em;
+    height: max-content;
+}
+
+.artifacts, .project-tools {
+    padding: 1.2em;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0,6,26,0.1);
+    margin-bottom: 1em;
+}
+
+.artifacts ul {
+    padding: 0;
+}
+
+.artifacts li {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.artifacts li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background:rgba(1, 175, 181, 0.5);
+    margin: 6px 10px 0 0;
+}
+
+.artifacts li:last-of-type {
+    margin: 0;
+}
+
+.role {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.role span {
+    font-size: 1.2em;
+}
+
+.project-tools {
+    text-align: center;
+}
+
+.project-tools li {
+    display: inline-flex;
+}
+
+.project-tools img {
+    width: auto;
+    height: 50px;
+    max-width: 180px;
+}
+
+.project-main h3, .artifacts h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.project-main h3, .project-sidebar h3 {
+    margin-top: 0;
+}
+
+.outcome {
+    background-image: linear-gradient(110deg, rgba(1, 175, 181, 0.5) 0%, rgba(168, 230, 54, 0.5) 75%);
+}
+
+@media only screen and (max-width: 480px) {
+    .project-wrapper {
+        display: block;
+    }
+    .project-main, .project-sidebar {
+        width: 100%;
+    }
+    .project-main {
+        margin-bottom: 1em;
+    }
+    .project-sidebar {
+        margin: 0;
+    }
+}

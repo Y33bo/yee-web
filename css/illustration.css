@@ -1,0 +1,27 @@
+.illo-projects {
+    display: inline-flex;
+}
+
+.illo-projects li {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    padding: 0;
+}
+
+.illo-projects li img {
+    width: 100%;
+    height: fit-content;
+}
+
+.illo-projects h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    padding: 1em 0;
+}
